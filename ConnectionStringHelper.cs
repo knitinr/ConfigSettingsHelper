@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace ConfigUtilities
 {
+    /// <summary>
+    /// Provides a simple means of reading connection strings from and writing connection strings to the application's configuration file
+    /// </summary>
     public class ConnectionStringHelper : BaseConfigHelper<ConnectionStringHelper>
     {
+        /// <summary>
+        /// Indexer for accessing the connection string entries
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public string this[string key]
         {
             get
