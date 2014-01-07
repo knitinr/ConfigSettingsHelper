@@ -11,12 +11,12 @@ connection string by using the obtained instance indexer.
 The following is sample code to demonstrate the use of the ConfigUtilities library:
 
 
-using ConfigUtilities;
-
-namespace SaveSettingsToAppConfig
-{
-    class Program
+    using ConfigUtilities;
+    
+    namespace SaveSettingsToAppConfig
     {
+      class Program
+      {
         static void Main(string[] args)
         {
             var cfg = ConfigHelper.GetInstance();
@@ -27,5 +27,5 @@ namespace SaveSettingsToAppConfig
             var oldconnstr = cstr["TestConnStr"]; //this fetches the connection string
             cstr["TestConnStr"] = "ThisConnStr"; //this sets the connection string
         }
+      }
     }
-}
